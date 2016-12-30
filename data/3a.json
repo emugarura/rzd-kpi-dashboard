@@ -1,0 +1,24 @@
+[{
+	"trg_name": "Sapsan",
+	"trg_sum": "15679815.4",
+	"trg_proc": "109.4"
+},
+{
+	"trg_name": "Allegro",
+	"trg_sum": "745880",
+	"trg_proc": "198.5"
+},
+{
+	"trg_name": "Lastochka (long-distance)",
+	"trg_sum": "446910.6",
+	"trg_proc": "134.8"
+},
+{
+	"trg_name": "Lastochka (suburban)",
+	"trg_sum": "593241.1",
+	"trg_proc": "152.3"
+},
+{
+	"allD_proc": "147.6",
+	"allP_procc": "152.3"
+}]

@@ -1,0 +1,111 @@
+[{
+	"trg_name": "Sapsan",
+	"trg_proc": "99.3",
+	"trg_area": [{
+		"area_name": "St. Petersburg - Moscow",
+		"val_count": "273",
+		"val_proc": "99.26"
+	}]
+},
+{
+	"trg_name": "Allegro",
+	"trg_proc": "99.1",
+	"trg_area": [{
+		"area_name": "St. Petersburg – Helsinki",
+		"val_count": "187",
+		"val_proc": "99.06"
+	}]
+},
+{
+	"trg_name": "Lastochka (long-distance)",
+	"trg_proc": "99.1",
+	"trg_area": [{
+		"area_name": "Moscow - Nizhny Novgorod",
+		"val_count": "40",
+		"val_proc": "99.65"
+	},
+	{
+		"area_name": "St. Petersburg - Bologoye, Novgorod",
+		"val_count": "54",
+		"val_proc": "99.62"
+	},
+	{
+		"area_name": "Moscow - Smolensk",
+		"val_count": "176",
+		"val_proc": "98.33"
+	},
+	{
+		"area_name": "Moscow - Kursk",
+		"val_count": "35",
+		"val_proc": "99.49"
+	},
+	{
+		"area_name": "St. Petersburg - Petrozavodsk",
+		"val_count": "69",
+		"val_proc": "98.76"
+	},
+	{
+		"area_name": "Adler - Krasnodar",
+		"val_count": "101",
+		"val_proc": "99.11"
+	},
+	{
+		"area_name": "Rostov - Krasnodar",
+		"val_count": "136",
+		"val_proc": "98.49"
+	},
+	{
+		"area_name": "Adler - Maykop",
+		"val_count": "82",
+		"val_proc": "99.13"
+	}]
+},
+{
+	"trg_name": "Lastochka (suburban)",
+	"trg_proc": "99.18",
+	"trg_area": [{
+		"area_name": "Adler - Imereti Resort",
+		"val_count": "30",
+		"val_proc": "93.83"
+	},
+	{
+		"area_name": "Adler - Roza Hutor",
+		"val_count": "40",
+		"val_proc": "99.86"
+	},
+	{
+		"area_name": "Tuapse - Adler",
+		"val_count": "924",
+		"val_proc": "98.92"
+	},
+	{
+		"area_name": "Adler - Airport",
+		"val_count": "10",
+		"val_proc": "99.93"
+	},
+	{
+		"area_name": "St. Petersburg - Vyborg",
+		"val_count": "91",
+		"val_proc": "99.35"
+	},
+	{
+		"area_name": "Moscow - Kryukovo",
+		"val_count": "180",
+		"val_proc": "99.72"
+	},
+	{
+		"area_name": "Moscow - Tver",
+		"val_count": "689",
+		"val_proc": "98.38"
+	},
+	{
+		"area_name": "St. Petersburg - Volkhovstroy",
+		"val_count": "225",
+		"val_proc": "97.03"
+	},
+	{
+		"area_name": "St. Petersburg - Luga",
+		"val_count": "7",
+		"val_proc": "99.9"
+	}]
+}]

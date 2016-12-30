@@ -1,0 +1,20 @@
+[{
+	"remark_name": "Complaint",
+	"remark_count": "3",
+	"remark_proc": "30"
+},
+{
+	"remark_name": "Suggestion",
+	"remark_count": "1",
+	"remark_proc": "10"
+},
+{
+	"remark_name": "Gratitude",
+	"remark_count": "4",
+	"remark_proc": "40"
+},
+{
+	"remark_name": "Appeal",
+	"remark_count": "2",
+	"remark_proc": "20"
+}]

@@ -1,0 +1,60 @@
+[{
+	"fs_name": "Train control system",
+	"fs_proc": "11"
+},
+{
+	"fs_name": "Traction equipment",
+	"fs_proc": "2"
+},
+{
+	"fs_name": "Electrical equipment",
+	"fs_proc": "3"
+},
+{
+	"fs_name": "Brake system",
+	"fs_proc": "2"
+},
+{
+	"fs_name": "Equipment located on the trolley",
+	"fs_proc": "7"
+},
+{
+	"fs_name": "Bearing",
+	"fs_proc": "0"
+},
+{
+	"fs_name": "Tilting system",
+	"fs_proc": "3"
+},
+{
+	"fs_name": "Nosecone",
+	"fs_proc": "1"
+},
+{
+	"fs_name": "Automatic coupling",
+	"fs_proc": "1"
+},
+{
+	"fs_name": "Windscreen wiper",
+	"fs_proc": "30"
+},
+{
+	"fs_name": "Video surveillance system",
+	"fs_proc": "22"
+},
+{
+	"fs_name": "Safety System",
+	"fs_proc": "16"
+},
+{
+	"fs_name": "Fire alarm",
+	"fs_proc": "26"
+},
+{
+	"fs_name": "Air conditioning",
+	"fs_proc": "36"
+},
+{
+	"fs_name": "Other",
+	"fs_proc": "3"
+}]

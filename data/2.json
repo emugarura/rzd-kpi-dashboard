@@ -1,0 +1,62 @@
+[{
+	"trg_name": "Sapsan",
+	"trg_area": [{
+		"area_name": "St. Petersburg - Moscow",
+		"val_count": "4757969",
+		"val_proc": "100"
+	}]
+},
+{
+	"trg_name": "Allegro",
+	"trg_area": [{
+		"area_name": "St. Petersburg – Helsinki",
+		"val_count": "388935",
+		"val_proc": "100"
+	},
+	{
+		"area_name": "– incl. from St. Petersburg (odd)",
+		"val_count": "193626",
+		"val_proc": "100"
+	}]
+},
+{
+	"trg_name": "Lastochka (long-distance)",
+	"trg_area": [{
+		"area_name": "St. Petersburg - Bologoye, Novgorod",
+		"val_count": "473558",
+		"val_proc": "100"
+	},
+	{
+		"area_name": "Rostov - Krasnodar",
+		"val_count": "277833",
+		"val_proc": "100"
+	},
+	{
+		"area_name": "Adler - Maykop",
+		"val_count": "282693",
+		"val_proc": "100"
+	}]
+},
+{
+	"trg_name": "Lastochka (suburban)",
+	"trg_area": [{
+		"area_name": "Adler - Imereti Resort",
+		"val_count": "406070",
+		"val_proc": "100"
+	},
+	{
+		"area_name": "Adler - Roza Hutor",
+		"val_count": "802235",
+		"val_proc": "100"
+	},
+	{
+		"area_name": "Tuapse - Adler",
+		"val_count": "3692806",
+		"val_proc": "100"
+	},
+	{
+		"area_name": "Adler - Airport",
+		"val_count": "176919",
+		"val_proc": "100"
+	}]
+}]

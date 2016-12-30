@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Key Performance Indicators of High-speed Rail Department - Russian Railways</title>
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/c3.min.css" >
+<link rel="stylesheet" href="/css/charts.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/bootstrap-datepicker3.min.css">
+</head>
+
+<body style="padding-top: 70px;" class="kpi">
+<nav class="navbar navbar-default navbar-fixed-top" style="margin-bottom:0;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="/img/logo.gif" alt="Key Performance Indicators"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <form class="navbar-form navbar-left" role="search">
+        <span class="fa-stack fa-lg pull-left"><i class="fa fa-calendar fa-stack-1x "></i></span> Period:
+        <div class="form-group input-group-sm">
+          <select id="selPeriod" class="form-control"></select>
+        </div>
+        <div class="form-group" id="date_block">
+          <div id="datepicker" class="input-daterange input-group">
+            <span class="input-group-addon">с</span>
+            <input type="text" name="date_start" id="date_start" class="input-sm form-control" disabled>
+            <span class="input-group-addon">по</span>
+            <input type="text" name="date_end" id="date_end" class="input-sm form-control" disabled>
+          </div>
+        </div>
+        <button id="chart_params" class="btn btn-primary">Build report</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+		<div class="col-sm-6">
+			<div class="col-sm-12">
+	      <div class="panel panel-primary">
+	        <div class="panel-heading">The Violation of Train Schedules</div>
+	        <div class="panel-body">
+	          <table>
+	            <tr>
+	              <td class="text-center" id="aa0_badge"></td>
+	              <td style="width:100%;">
+	                <div class="loader" id="loader-aa0"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+									<div id="d3-aa0" class="barchart" style="width:90%; height:100px;"></div>
+	              </td>
+	            </tr>
+	            <tr style="border-top: 1px solid #eeeeee;">
+	              <td class="text-center" id="aa1_badge"></td>
+	              <td style="width:100%;">
+	                <div class="loader" id="loader-aa1"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+	                <div id="d3-aa1" class="barchart" style="width:90%; height:100px;"></div>
+	              </td>
+	            </tr>
+							<tr style="border-top: 1px solid #eeeeee;">
+	              <td class="text-center" id="aa2_badge"></td>
+	              <td style="width:100%;">
+	                <div class="loader" id="loader-aa2"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+	                <div id="d3-aa2" class="barchart" style="width:90%; height:400px;"></div>
+	              </td>
+	            </tr>
+							<tr style="border-top: 1px solid #eeeeee;">
+	              <td class="text-center" id="aa3_badge"></td>
+	              <td style="width:100%;">
+	                <div class="loader" id="loader-aa3"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+	                <div id="d3-aa3" class="barchart" style="width:90%; height:400px;"></div>
+	              </td>
+	            </tr>
+	          </table>
+	        </div>
+	      </div>
+			</div>
+			<div class="col-sm-12">
+	      <div class="panel panel-primary">
+	        <div class="panel-heading">The specific number of complaints
+	        </div>
+	        <div class="panel-body">
+	          <div class="loader" id="loader-cc0"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+	          <div id="d3-cc0" style="height:250px"></div>
+	        </div>
+	      </div>
+	    </div>
+			<div class="col-sm-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Number of safety violations</div>
+					<div class="panel-body">
+						<div class="loader" id="loader-2a"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+						<div id="d3-2a" style="height:300px"></div>
+					</div>
+				</div>
+			</div>
+    </div>
+    <div class="col-sm-6">
+			<div class="col-sm-12">
+	      <div class="panel panel-primary">
+	        <div class="panel-heading">Passenger turnover</div>
+	        <div class="panel-body">
+	          <h4>Long-distance</h4>
+						<div class="loader" id="loader-bb0"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+						<div id="d3-bb0" class="barchart" style="height:330px;"></div>
+	          <hr>
+	          <h4>Suburban</h4>
+						<div class="loader" id="loader-bb1"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+						<div id="d3-bb1" class="barchart" style="height:200px;"></div>
+	        </div>
+	      </div>
+    	</div>
+
+	    <div class="col-sm-12">
+	      <div class="panel panel-primary">
+	        <div class="panel-heading">Use of capacity</div>
+	        <div class="panel-body">
+	          <div class="loader" id="loader-dd4"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+	          <div id="d3-dd4" style="height:200px;"></div>
+	        </div>
+	      </div>
+	    </div>
+			<div class="col-sm-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Revenue</div>
+					<div class="panel-body">
+						<table>
+							<tr>
+								<td class="text-center" id="3a0_badge"></td>
+								<td style="width:100%;">
+									<div class="loader" id="loader-3a0"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+									<div id="d3-3a0" class="barchart" style="height:200px;"></div>
+								</td>
+							</tr>
+							<tr style="border-top: 1px solid #eeeeee;">
+								<td class="text-center" id="3a1_badge"></td>
+								<td style="width:100%;">
+									<div class="loader" id="loader-3a1"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+									<div id="d3-3a1" class="barchart" style="height:100px;"></div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">The specific number of cases of incorrect operation</div>
+				<div class="panel-body">
+					<h4>Sapsan</h4>
+					<div class="loader" id="loader-2b0"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+					<div id="d3-2b0" style="height:300px"></div>
+					<hr>
+					<h4>Allegro</h4>
+					<div class="loader" id="loader-2b1"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+					<div id="d3-2b1" style="height:300px"></div>
+					<hr>
+					<h4>Lastochka (long-distance)</h4>
+					<div class="loader" id="loader-2b2"><i class="fa fa-refresh fa-3x fa-spin"></i></div>
+					<div id="d3-2b2" style="height:300px"></div>
+				</div>
+			</div>
+		</div>
+  </div>
+</div>
+
+<script src="/js/jquery-2.2.2.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/d3.min.js" charset="utf-8"></script>
+<script src="/js/c3.min.js?v=2"></script>
+<script src="/js/sidebar.js?v=2"></script>
+<script src="/js/linechart4.js?v=2"></script>
+<script src="/js/verticallinechart.js?v=2"></script>
+<script src="/js/piechart.js"></script>
+<script src="/js/groupedchart.js"></script>
+<script src="/js/bootstrap-datepicker.min.js"></script>
+<script src="/js/bootstrap-datepicker.ru.js"></script>
+<script src="/js/period.js?v=2"></script>
+
+<script>
+
+$(function() {
+console.log( "ready!" );
+var arrNameReriod=["Last day","This week","Last week","This month","Last month","This year"];
+ $.each(arrNameReriod, function( index, value ) {
+   $("#selPeriod").append('<option value="' + index + '">' + value + '</option>')
+ });
+
+ function addZero(t){
+   return (String(t).length==1)? "0"+t: t;
+ }
+
+ function formatTime(t){
+   return addZero(t.getDate())+"."+ addZero(t.getMonth()+1)+"."+t.getFullYear();
+ }
+ var curDate  = new Date(),
+ 		timeStart = new Date(),
+ 		timeEnd = new Date();
+
+ $("#selPeriod").change(function() {
+  curDate  = new Date();
+  timeStart = new Date();
+  timeEnd = new Date();
+
+  switch ($("#selPeriod").val()) {
+   case "0":
+		 timeStart.setDate(curDate.getDate()-1);
+		 timeEnd.setDate(curDate.getDate()-1);
+		 break;
+   case "1":
+	  timeStart.setDate(curDate.getDate()-curDate.getDay()+1);
+	  timeEnd.setDate(curDate.getDate());
+    break;
+   case "2":
+	  timeStart.setDate(curDate.getDate()-curDate.getDay()-6);
+	  timeEnd.setDate(curDate.getDate()-curDate.getDay());
+    break;
+   case "3":
+	  timeStart.setDate(1);
+	  timeEnd.setDate(curDate.getDate());
+    break;
+   case "4":
+	  timeStart= new Date(curDate.getFullYear(),curDate.getMonth()-1,1);
+	  timeEnd= new Date(curDate.getFullYear(),curDate.getMonth(),0);
+    break;
+	 case "5":
+	  timeStart= new Date(curDate.getFullYear(),0,1);
+	  timeEnd= new Date(curDate.getFullYear(),12,0);
+		break;
+  }
+
+
+  $("#date_start").val(formatTime(timeStart));
+  $("#date_end").val(formatTime(timeEnd));
+ });
+
+  var date_start,
+	  date_end,
+		selected_period,
+		periodType;
+
+	//$("#selPeriod").val(5)
+
+	timeStart.setDate(curDate.getDate()-1);
+	timeEnd.setDate(curDate.getDate()-1);
+
+	$("#date_start").val(formatTime(timeStart));
+  $("#date_end").val(formatTime(timeEnd));
+
+	date_start = $("#date_start").val();
+  date_end = $("#date_end").val();
+	selected_period = $("#selPeriod").val();
+
+	if (selected_period == "0") {
+		periodType = 1;
+	} else if (selected_period == "1" || selected_period == "2") {
+		periodType = 2;
+	} else if (selected_period == "3" || selected_period == "4") {
+		periodType = 3;
+	} else {
+		periodType = 4;
+	}
+
+	console.info("date_start=" + date_start );
+	console.info("date_end=" +  date_end );
+	console.info("selected_period=" + selected_period );
+	console.info("periodType=" + periodType );
+
+	drawCharts(date_start,date_end,periodType);
+
+});
+</script>
+</body>
+</html>

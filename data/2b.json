@@ -1,0 +1,189 @@
+[{
+	"trg_name": "Sapsan",
+	"trg_area": [{
+		"fs_name": "Train control system",
+		"fs_sum": "11"
+	},
+	{
+		"fs_name": "Traction equipment",
+		"fs_sum": "2"
+	},
+	{
+		"fs_name": "Electrical equipment",
+		"fs_sum": "3"
+	},
+	{
+		"fs_name": "Brake system",
+		"fs_sum": "2"
+	},
+	{
+		"fs_name": "Equipment located on the trolley",
+		"fs_sum": "7"
+	},
+	{
+		"fs_name": "Bearing",
+		"fs_sum": "0"
+	},
+	{
+		"fs_name": "Tilting system",
+		"fs_sum": "3"
+	},
+	{
+		"fs_name": "Nosecone",
+		"fs_sum": "1"
+	},
+	{
+		"fs_name": "Automatic coupling",
+		"fs_sum": "1"
+	},
+	{
+		"fs_name": "Windscreen wiper",
+		"fs_sum": "30"
+	},
+	{
+		"fs_name": "Video surveillance system",
+		"fs_sum": "22"
+	},
+	{
+		"fs_name": "Safety System",
+		"fs_sum": "16"
+	},
+	{
+		"fs_name": "Fire alarm",
+		"fs_sum": "26"
+	},
+	{
+		"fs_name": "Air conditioning",
+		"fs_sum": "36"
+	},
+	{
+		"fs_name": "Other",
+		"fs_sum": "3"
+	}]
+},
+{
+	"trg_name": "Allegro",
+	"trg_area": [{
+		"fs_name": "Train control system",
+		"fs_sum": "11"
+	},
+	{
+		"fs_name": "Traction equipment",
+		"fs_sum": "12"
+	},
+	{
+		"fs_name": "Electrical equipment",
+		"fs_sum": "4"
+	},
+	{
+		"fs_name": "Brake system",
+		"fs_sum": "12"
+	},
+	{
+		"fs_name": "Equipment located on the trolley",
+		"fs_sum": "17"
+	},
+	{
+		"fs_name": "Bearing",
+		"fs_sum": "10"
+	},
+	{
+		"fs_name": "Tilting system",
+		"fs_sum": "31"
+	},
+	{
+		"fs_name": "Nosecone",
+		"fs_sum": "10"
+	},
+	{
+		"fs_name": "Automatic coupling",
+		"fs_sum": "13"
+	},
+	{
+		"fs_name": "Windscreen wiper",
+		"fs_sum": "3"
+	},
+	{
+		"fs_name": "Video surveillance system",
+		"fs_sum": "41"
+	},
+	{
+		"fs_name": "Safety System",
+		"fs_sum": "14"
+	},
+	{
+		"fs_name": "Fire alarm",
+		"fs_sum": "16"
+	},
+	{
+		"fs_name": "Air conditioning",
+		"fs_sum": "6"
+	},
+	{
+		"fs_name": "Other",
+		"fs_sum": "13"
+	}]
+},
+{
+	"trg_name": "Lastochka (long-distance)",
+	"trg_area": [{
+		"fs_name": "Train control system",
+		"fs_sum": "21"
+	},
+	{
+		"fs_name": "Traction equipment",
+		"fs_sum": "2"
+	},
+	{
+		"fs_name": "Electrical equipment",
+		"fs_sum": "41"
+	},
+	{
+		"fs_name": "Brake system",
+		"fs_sum": "2"
+	},
+	{
+		"fs_name": "Equipment located on the trolley",
+		"fs_sum": "22"
+	},
+	{
+		"fs_name": "Bearing",
+		"fs_sum": "3"
+	},
+	{
+		"fs_name": "Tilting system",
+		"fs_sum": "18"
+	},
+	{
+		"fs_name": "Nosecone",
+		"fs_sum": "30"
+	},
+	{
+		"fs_name": "Automatic coupling",
+		"fs_sum": "3"
+	},
+	{
+		"fs_name": "Windscreen wiper",
+		"fs_sum": "37"
+	},
+	{
+		"fs_name": "Video surveillance system",
+		"fs_sum": "14"
+	},
+	{
+		"fs_name": "Safety System",
+		"fs_sum": "34"
+	},
+	{
+		"fs_name": "Fire alarm",
+		"fs_sum": "10"
+	},
+	{
+		"fs_name": "Air conditioning",
+		"fs_sum": "16"
+	},
+	{
+		"fs_name": "Other",
+		"fs_sum": "3"
+	}]
+}]
