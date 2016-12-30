@@ -5,7 +5,7 @@ function drawCharts(d_start,d_end,p_Type) {
 	$("div[id*='loader-']").show();
 
 	$.ajax({
-	  url: isLocalDebug ? '/data/1.json' : '/pls/tcl/ais_ref.dyn_graph.graph_do13',
+	  url: isLocalDebug ? 'data/1.json' : '/pls/tcl/ais_ref.dyn_graph.graph_do13',
 		data: {
         'p_periodType': p_Type,
         'p_dateStart': d_start,
@@ -52,7 +52,7 @@ function drawCharts(d_start,d_end,p_Type) {
 
 	//2 Пассажирооборот
 	$.ajax({
-		url: isLocalDebug ? '/data/2.json' : '/pls/tcl/ais_ref.dyn_graph.graph_pass',
+		url: isLocalDebug ? 'data/2.json' : '/pls/tcl/ais_ref.dyn_graph.graph_pass',
 		data: {
         'p_periodType': p_Type,
         'p_dateStart': d_start,
@@ -129,7 +129,7 @@ function drawCharts(d_start,d_end,p_Type) {
 
 	//3 удельное количество жалоб
 	$.ajax({
-		url: isLocalDebug ? '/data/3.json' : '/pls/tcl/ais_ref.dyn_graph.graph_remark',
+		url: isLocalDebug ? 'data/3.json' : '/pls/tcl/ais_ref.dyn_graph.graph_remark',
 		data: {
         'p_periodType': p_Type,
         'p_dateStart': d_start,
@@ -155,7 +155,7 @@ function drawCharts(d_start,d_end,p_Type) {
 
 	//4 Использование вместимости
 	$.ajax({
-		url: isLocalDebug ? '/data/4.json' : '/pls/tcl/ais_ref.dyn_graph.graph_capacity',
+		url: isLocalDebug ? 'data/4.json' : '/pls/tcl/ais_ref.dyn_graph.graph_capacity',
 		data: {
         'p_periodType': p_Type,
         'p_dateStart': d_start,
@@ -190,7 +190,7 @@ function drawCharts(d_start,d_end,p_Type) {
 
 	//2a Количество нарушений безопасности движения
 	$.ajax({
-		url: isLocalDebug ? '/data/2a.json' : '/pls/tcl/ais_ref.dyn_graph.graph_faultexpl',
+		url: isLocalDebug ? 'data/2a.json' : '/pls/tcl/ais_ref.dyn_graph.graph_faultexpl',
 		data: {
         'p_periodType': p_Type,
         'p_dateStart': d_start,
@@ -216,7 +216,7 @@ function drawCharts(d_start,d_end,p_Type) {
 
 	//2b Удельное количество случаев некорректной работы
 	$.ajax({
-		url: isLocalDebug ? '/data/2b.json' : '/pls/tcl/ais_ref.dyn_graph.graph_incorrOper',
+		url: isLocalDebug ? 'data/2b.json' : '/pls/tcl/ais_ref.dyn_graph.graph_incorrOper',
 		data: {
         'p_periodType': p_Type,
         'p_dateStart': d_start,
@@ -260,7 +260,7 @@ function drawCharts(d_start,d_end,p_Type) {
 
 	//3a Выручка, начисленная по перевозочным видам деятельности
 	$.ajax({
-		url: isLocalDebug ? '/data/3a.json' : '/pls/tcl/ais_ref.dyn_graph.graph_sum',
+		url: isLocalDebug ? 'data/3a.json' : '/pls/tcl/ais_ref.dyn_graph.graph_sum',
 		data: {
         'p_periodType': p_Type,
         'p_dateStart': d_start,
