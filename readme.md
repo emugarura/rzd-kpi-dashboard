@@ -8,6 +8,10 @@ So it's not meant to be a finished product, but just an example of how it might 
 
 Feel free to edit / manipulate in any way you wish.
 
+## Demo
+
+Here is a live demo of [KPI dashboard](https://rufflet.github.io/rzd-kpi-dashboard/)
+
 ## Sources
 
 This project makes use of several other projects:
